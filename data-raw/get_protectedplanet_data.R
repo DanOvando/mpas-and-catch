@@ -4,7 +4,9 @@ library(countrycode)
 library(here)
 library(countrycode)
 library(wdpar)
-renv::install("prioritizr/wdpar")
+# renv::install("prioritizr/wdpar")
+
+# https://prioritizr.github.io/wdpar/
 # http://d1gam3xoknrgr2.cloudfront.net/current/WDPA_WDOECM_AS_shp.zip
 # 
 # http://d1gam3xoknrgr2.cloudfront.net/current/WDPA_WDOECM_AF_shp.zip
