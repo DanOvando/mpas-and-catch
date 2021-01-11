@@ -4,31 +4,26 @@
 # mpas-and-catch
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
-The goal of mpas-and-catch is to …
+The goal of mpas-and-catch is to explore a regression discontinuity
+design around country-level catch and country-level MPA coverage
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+## Reproducing Results
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
+All materials needed to reproduce our results and manuscript are
+contained in this repository. In order to reproduce
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
+1.  Fork the repository and clone to your machine
 
-You can also embed plots, for example:
+2.  Open R and set your working directory of the cloned repository (or
+    just use RStudio projects)
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
+3.  This project is set up with
+    [`renv`](https://rstudio.github.io/renv/articles/renv.html) to
+    manage package dependencies. Inside R (and with your working
+    directory set correctly) run `renv::restore()`. This will install
+    the correct versions of all the packages needed to replicate our
+    results. Packages are installed in a stand-alone project library for
+    this paper, and will not affect your installed R packages anywhere
+    else.
